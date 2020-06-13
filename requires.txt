@@ -1,0 +1,5 @@
+batemaneq>=0.2.2
+Pint>=0.12
+
+[:python_version < "3.7"]
+importlib_resources
