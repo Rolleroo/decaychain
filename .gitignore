@@ -1,8 +1,34 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python
-# Edit at https://www.toptal.com/developers/gitignore?templates=python
+Skip to content
+Pull requests
+Issues
+Marketplace
+Explore
+@Rolleroo
+Learn Git and GitHub without any code!
 
-### Python ###
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+alexmalins /
+radioactivedecay
+
+1
+0
+
+    1
+
+Code
+Issues 0
+Pull requests 0
+Actions
+Projects 0
+Wiki
+Security 0
+
+    Insights
+
+radioactivedecay/.gitignore
+@alexmalins alexmalins Initial commit 2cdc822 12 days ago
+125 lines (102 sloc) 1.68 KB
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -96,12 +122,8 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# celery beat schedule file
 celerybeat-schedule
-celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
@@ -133,7 +155,17 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# pytype static type analyzer
-.pytype/
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
 
-# End of https://www.toptal.com/developers/gitignore/api/python
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
