@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+src/BatemanMulti.py
+src/data/ICRP-07.NDX
+src/decaychain.egg-info/PKG-INFO
+src/decaychain.egg-info/SOURCES.txt
+src/decaychain.egg-info/dependency_links.txt
+src/decaychain.egg-info/requires.txt
+src/decaychain.egg-info/top_level.txt
