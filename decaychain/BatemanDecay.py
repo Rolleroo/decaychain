@@ -10,21 +10,14 @@ from math import log as ln # required for bateman module to function
 from pint import UnitRegistry
 ureg = UnitRegistry()
 
-def bateman_trial(nuclide, time, tunit, conc, aunit):
+def bateman_trial(nuclide, time, tunit, conc):
 
     chain_generator = Generator()
 
     nuclide_name = nuclide
     concentration_value = conc
-    concentration_unit = aunit
     decay_time = Time(time, tunit).quantity
     decay_time.ito(ureg.years)
-
-    # start process of calculating stuff
-    concentration = Concentration(
-        value=concentration_value,
-        unit=concentration_unit
-    )
 
     # generate the decay chains for the supplied nuclide name
     chains = chain_generator.get_for_nuclide_name(nuclide_name)
@@ -54,16 +47,16 @@ def bateman_trial(nuclide, time, tunit, conc, aunit):
         ## Runs results through bateman module.
         output_items = bateman_parent([ln(2) / x for x in Thalf], decay_time.magnitude)
 
-        ## Converts the results output to final activity concentration units and appends them to final_result dicionary
+        ## Converts the results output to final activity  and appends them to final_result dicionary
 
         for idx, output_item in enumerate(output_items):
             nuclide = chain.items[idx].nuclide
             if not final_result.get(nuclide.name):
                 final_result[nuclide.name] = 0
             final_conc = output_item * (Thalf[0] / Thalf[idx]) * concentration_value
-            relative_conc = Concentration(final_conc * chain.ratio, concentration_unit)
+            relative_conc = final_conc * chain.ratio
 
-            final_result[nuclide.name] += float(relative_conc.value)
+            final_result[nuclide.name] += float(relative_conc)
 
 
     return final_result
