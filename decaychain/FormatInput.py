@@ -15,4 +15,3 @@ def format_input(inputs):
 
     return outputs
 
-

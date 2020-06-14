@@ -11,7 +11,7 @@ requirements = [
 
 setup(
     name ='decaychain',
-    version ='0.6.6',
+    version ='0.6.7',
     description='Module to radioactively decay radioactive elements using the ICRP-107 and Bateman Equation',
 #   package_dir={''},
     license='MIT',
