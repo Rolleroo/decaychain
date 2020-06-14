@@ -17,5 +17,3 @@ def NuclideFormatter(nuclide):
     element_f = element[0].upper() + element[1:].lower()
     nuclide_out = str(element_f) + "-" + str(atomic_mass) +  meta_state
     return nuclide_out
-z=NuclideFormatter("Te-125n")
-print(z)
