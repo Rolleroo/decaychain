@@ -2,7 +2,7 @@ from decaychain.BatemanDecay import bateman_trial
 from decaychain.FormatInput import format_input
 
 
-    def bateman_multi(self, self.dict_input, self.user_time, self.user_tunit):
+    def bateman_multi(dict_input, user_time, user_tunit):
         results = {}
         formatted = format_input(dict_input)
 
