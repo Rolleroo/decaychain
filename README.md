@@ -60,4 +60,4 @@ Supplementary Data (ZIP file): https://journals.sagepub.com/doi/suppl/10.1177/AN
 File used: ./ICRP-07.NDX (column names as per ./UserGuide.pdf - table on page 4)
 
 ## Thanks
-With particular thanks to @bjodah for use of the batemaneq module (https://github.com/bjodah/batemaneq).
+With particular thanks to @bjodah for use of the batemaneq module (https://github.com/bjodah/batemaneq) and Alex Malins for leading the way (https://github.com/alexmalins/radioactivedecay)
